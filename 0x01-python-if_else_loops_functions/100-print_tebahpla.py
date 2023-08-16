@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 i = 122
 count = 0
-while i >=  97:
+while i >= 97:
     if count % 2 == 0:
         pr = i
     else:
