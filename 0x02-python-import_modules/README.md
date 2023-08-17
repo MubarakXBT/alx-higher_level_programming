@@ -1,5 +1,5 @@
 ##Welcome to the Python world!
-#This repository contains ALX project files on high level programming [Python language]#
+#This repository contains ALX project files on high level programming [Python language -  import & modules]#
 
 "The first projects are more "C-oriented" - no tricks, no funky syntax - simple!"
 "If you've already played with Python, don't worry, fun things will come."
