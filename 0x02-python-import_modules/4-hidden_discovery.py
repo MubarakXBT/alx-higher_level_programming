@@ -5,4 +5,3 @@ if __name__ == "__main__":
         if item[0] == "_":
             continue
         print(item)
-
