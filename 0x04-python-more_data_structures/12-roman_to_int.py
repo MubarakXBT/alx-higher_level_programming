@@ -14,7 +14,7 @@ def roman_to_int(roman_string):
         j = 1
         i = 0
         result = 0
-        while i < len(lst) :
+        while i < len(lst):
             if j <= len(roman_string):
                 if lst[i] < lst[j]:
                     result += lst[j] - lst[i]
