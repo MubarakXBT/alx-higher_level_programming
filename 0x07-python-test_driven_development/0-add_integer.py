@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""Defines an integer addition function."""
+
+
 def add_integer(a, b=98):
-    """ add_integer - a function that adds integers
+    """ add_integer - a function that adds integers a and b
 
     Args:
         a (int) = first number
@@ -8,6 +11,9 @@ def add_integer(a, b=98):
 
     Returns:
         added result of the numbers
+
+    Raises:
+        TypeError: If either of a or b is a non-integer and non-float.
     """
     if (not isinstance(a, float) and not isinstance(a, int)):
         raise TypeError("a must be an integer")
