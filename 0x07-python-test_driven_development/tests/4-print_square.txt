@@ -1,0 +1,70 @@
+
+=============================
+How To Use 2-matrix_divide.py
+=============================
+
+This module defines a function that prints a square 'print_square(size)'
+
+Usage:
+======
+"print_square". prints sqaure using # in given size
+
+::
+
+    >>> square = __import__('4-print_square').print_square
+    >>> square(5)
+    #####
+    #####
+    #####
+    #####
+    #####
+
+    >>> square(10)
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+
+::
+
+Function handles empty size
+    >>> square(0)
+    <BLANKLINE>
+
+::
+
+Function Handles Negative size.
+
+    >>> square(-1)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
+
+    >>> square(-13)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
+
+::
+
+Function handles non-integers (Wrong Data Type)
+
+    >>> square(3.41)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> square("Hello")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> square("")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> square(None)
+    Traceback (most recent call last):
+    TypeError: size must be an integer

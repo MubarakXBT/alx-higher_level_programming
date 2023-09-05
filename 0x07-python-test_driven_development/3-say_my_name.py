@@ -10,12 +10,10 @@ def say_my_name(first_name, last_name=""):
     Returns:
         prints the name to standard outut
     """
+
     if not isinstance(first_name, str) or first_name.isdigit():
         raise TypeError("first_name must be a string")
     elif not isinstance(last_name, str) or last_name.isdigit():
         raise TypeError("last_name must be a string")
     else:
         print(first_name + ' ' + last_name)
-
-if __name__ == "__main__":
-    say_my_name(None, "Kazeem")
