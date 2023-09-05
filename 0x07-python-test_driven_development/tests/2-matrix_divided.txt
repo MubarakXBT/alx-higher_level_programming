@@ -1,9 +1,9 @@
 
 =============================
-How To Use 0-add_interger.py
+How To Use 2-matrix_divide.py
 =============================
 
-This module defines a function that adds 'matrix_divided(matrix , div)'
+This module defines a function that divides a matrix by a divisior 'matrix_divided(matrix , div)'
 
 Usage:
 ======

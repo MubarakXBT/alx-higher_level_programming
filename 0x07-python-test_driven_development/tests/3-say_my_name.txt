@@ -1,0 +1,43 @@
+
+=============================
+How To Use 3-say_my_name.py
+=============================
+
+This module defines a function that print name 'say_my_name(first_name , last_name)'
+
+Usage:
+======
+"say_my_name" prints the given name to stdout.
+
+::
+
+    >>> say_it = __import__('3-say_my_name').say_my_name
+    >>> say_it("Mubarak", "Kazeem")
+    Mubarak Kazeem
+
+    >>> say_it("Julien", "Bieber")
+    Julien Bieber
+
+::
+
+Function can handle wrong data type (i.e non-string)
+
+    >>> say_it("12", "Kazeem")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    >>> say_it("12", 11)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    >>> say_it(12, "Kazeem")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+::
+
+Function handles None
+
+    >>> say_it(None, "Kazeem")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
