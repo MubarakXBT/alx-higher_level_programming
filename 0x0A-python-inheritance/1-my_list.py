@@ -6,7 +6,7 @@ class MyList(list):
     """ a subclass of list"""
     def __init__(self):
         """initialize the object"""
-        super().__init__()
+        list.__init__(self)
 
     def print_sorted(self):
         """print sorted list"""
