@@ -9,4 +9,4 @@ def write_file(filename="", text=""):
         @text: string to be inserted or appended to the file
     """
     with open(filename, mode="w", encoding="utf-8") as myfile:
-        return(myfile.write(text))
+        return (myfile.write(text))
