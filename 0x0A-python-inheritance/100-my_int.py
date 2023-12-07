@@ -3,8 +3,8 @@
 
 
 class MyInt(int):
-    """
-    """
+    """ class MyInt a rebel of int"""
+
     def __new__(cls, value):
         return (super().__new__(cls, value))
 
@@ -13,4 +13,3 @@ class MyInt(int):
 
     def __ne__(seld, other):
         return (not super().__ne__(other))
-
