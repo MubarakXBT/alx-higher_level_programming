@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+""" module json to encode to return JSON of a string"""
 import json
-""" A Module to return Json of a string """
 
 
 def to_json_string(my_obj):
