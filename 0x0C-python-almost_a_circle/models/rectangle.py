@@ -89,9 +89,15 @@ class Rectangle(Base):
 
     def display(self):
         """ Prints the rectangle using HashTags '#' """
+        if self.y != 0:
+            for i in range(self.y):
+                print()
         for i in range(self.__height):
-            for j in range(self.__width):
-                print("#", end='')
+            if self.x != 0:
+                for i in range(self.x):
+                    print(' ',end='')
+                for j in range(self.__width):
+                    print("#", end='')
             print()
 
     def __str__(self):
