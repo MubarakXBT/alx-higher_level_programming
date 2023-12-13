@@ -86,14 +86,15 @@ class Rectangle(Base):
     def area(self):
         """ area method that return area value of the retangle"""
         return (self.__width * self.__height)
-    
+
     def display(self):
         """ Prints the rectangle using HashTags '#' """
         for i in range(self.__height):
             for j in range(self.__width):
-                print("#",end='')
+                print("#", end='')
             print()
 
     def __str__(self):
         """ Overriding object print output"""
-        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width,self.height))
+        return ("[Rectangle] ({}) {}/{} - {}/{}"
+                .format(self.id, self.x, self.y, self.width, self.height))
