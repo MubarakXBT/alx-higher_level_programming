@@ -150,3 +150,10 @@ class Rectangle(Base):
 
                 if key == 'id':
                     self.id = value
+
+    def to_dictionary(self):
+        """ public method to_dictionary that returns the dictionary
+        representation of a Rectangle """
+        val = {'id': self.id, 'width': self.width, 'height': self.height,
+               'x': self.x, 'y': self.y}
+        return (val)
