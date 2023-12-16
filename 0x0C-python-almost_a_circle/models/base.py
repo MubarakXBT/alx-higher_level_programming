@@ -4,6 +4,7 @@ None
 """
 import json
 
+
 class Base:
     """
     Class Base
@@ -67,9 +68,9 @@ class Base:
         from models.square import Square
 
         if cls.__name__ == 'Rectangle':
-            dummy = Rectangle(width = 3, height = 2, id = 0, x = 0, y = 0)
+            dummy = Rectangle(width=3, height=2, id=2, x=3, y=1)
             dummy.update(**dictionary)
         else:
-            dummy = Square(size = 2, id = 0, x = 0, y = 0)
+            dummy = Square(size=2, id=3, x=4, y=5)
             dummy.update(**dictionary)
         return dummy
