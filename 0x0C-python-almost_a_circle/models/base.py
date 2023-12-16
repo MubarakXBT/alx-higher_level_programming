@@ -67,10 +67,11 @@ class Base:
         from models.rectangle import Rectangle
         from models.square import Square
 
-        if cls.__name__ == 'Rectangle':
+        if issubclass(cls, Rectangle):
             dummy = Rectangle(width=3, height=2, id=2, x=3, y=1)
             dummy.update(**dictionary)
-        else:
+            return dummy
+        elif issubclass(cls, Square):
             dummy = Square(size=2, id=3, x=4, y=5)
             dummy.update(**dictionary)
-        return dummy
+            return dummy
