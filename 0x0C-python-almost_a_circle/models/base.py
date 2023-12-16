@@ -51,6 +51,6 @@ class Base:
             The list of JSON string representation
         """
         if json_string is None or len(json_string) == 0:
-            return ("[]")
+            return (list())
         mylist = json.loads(json_string)
         return (mylist)
